@@ -1,32 +1,48 @@
-// var message = 'Hello World'; // Não muito usado.Pois não tem Escopo de bloco
+const names = ['Lucas', 'Thauanna', 'Daniel'];
 
-// const -> Não podemos alterar
-// const message = 'Hello World';
-// // alert(message);
+const lucas = names[0];
 
-// // let -> Consegue alterar
-// let message2 = 'Hello World';
-// alert(message2);
-// message2 = 'String modificada';
-// alert(message2);
+console.log(lucas);
 
-// const message = 'Hello Wold';
-// console.log(message.length);
+// Adicionar elementos final do array
+names.push('Maria');
+console.log('============ Push ============');
+console.log(names);
 
-// const firstName = 'Lucas';
-// const lastName = 'Tenório';
+// Adicionar elementos inicio  do array
+names.unshift('Zé');
+console.log('============ unshift ============');
+console.log(names);
 
-// const names = 'Lucas,Thauanna,Daniel';
+// Remove ultimo valor de uma lista
+names.pop();
+console.log('============ pop ============');
+console.log(names);
 
-// console.log('Meu nome é ' + firstName + ' ' + lastName);
-// console.log(`Meu nome é ${firstName.toUpperCase()} ${lastName.toLowerCase()}`);
-// console.log(names.split(','));
+// Remove Primeiro elemento inicio do array
+names.shift('Zé');
+console.log('============ shift ============');
+console.log(names);
 
-// const number = 5;
-// console.log(number.toString());
-// console.log(typeof number);
+// Mudar valores
+console.log('============ Mudar valores ============');
+names[0] = 'Tenorio';
+console.log(names);
 
-// Lista
+// Verificar index do elementos
+console.log('====== Verificar indice do elemento ======');
+console.log(names.indexOf('Tenorio'));
 
-const list = [1, 2, 3, 4, 5];
-const object = { name: 'Lucas' };
+// Ordenar em ordem alfabetica
+console.log('======== Ordem Alfabetica ========');
+const sortedNames = names.sort();
+console.log(sortedNames);
+
+// Quantos Itens possuir
+console.log('============ Qntd de Items ============');
+console.log(names.length);
+
+// Verifica se é um array
+console.log('======== Verificar se é array ========');
+const namesIsArray = Array.isArray(names);
+console.log(namesIsArray);
